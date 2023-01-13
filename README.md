@@ -10,6 +10,7 @@
 <a href="https://tanjiaming2.github.io/activity2.html">Activity2</a>
 <a href="https://tanjiaming2.github.io/activity2b.html">Activity2b</a>
 <a href="https://tanjiaming2.github.io/activity2extra.html">Activity2extra</a>
+<a href="https://tanjiaming2.github.io/activity3.html">Activity3</a>
 
 Alternatively, for H1 and H2, an underline-ish style:
 
