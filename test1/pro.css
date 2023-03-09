@@ -1,0 +1,59 @@
+body{
+width:fit-content:
+}
+
+table {
+    font-family: monospace;
+    font-size: 20pt;
+    border-radius: 1px;
+    border: 1px solid black;
+text-align: center;
+color:grey;
+width:100%;
+
+}
+tr,td{
+text-align: center;
+background-color:#DE7335;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+hr{
+ height: 12px;
+ background: black;
+}
+
+a{
+text-decoration:none;
+color:black;
+}
+
+button {
+
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  background-color: red; 
+  color: white; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+p{
+text-align: center;
+}
+img.one{
+width:fit-content;
+}
+img.one{
+width:100%;
+}
+
+

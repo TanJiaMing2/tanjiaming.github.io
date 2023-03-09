@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css"
+          href="pro.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td><img src="logo1.png"></td>
+            <td><a href="TAN JIA MING_DCS2209221.html">HOME</a></td>
+            <td><a href="frame1.html">PROGRAMMES</a></td>
+            <td><a href="frame2.html">ABOUT US</a></td>
+            <td><a href="frame3.html">STUDENT PORTAL</a></td>
+            <td><a href="frame4.html">CONTACT US</a></td>
+        </tr>
+    </table>
+</form>
+<hr>
+<br>
+
+
+
+<h1>
+    <img class=one  src="logos1.jpg">
+    <img class=one  src="logos2.jpg">
+    <img class=one  src="logos3.jpg">
+<h1>
+
+
+<br>
+<hr>
+<p>Partner Universities</p>
+<hr>
+<p>
+<img src="logop1.jpg">
+<img src="logop2.jpg">
+<img src="logop3.jpg">
+</p>
+<footer>
+<img src="logo1.png">
+<p>UCSI College
+Wisma UCSI, Lot 39890, Jalan Cerdas, Taman Connaught, 56000 Cheras, Wilayah Persekutuan Kuala Lumpur.
+
+Course Enquiry: (+603) 9078 2033
+
+Course Enquiry (WhatsApp)
+Local Enrollment: (+6011) 3530 8837 | (+6011) 3512 7264
+International Enrollment: (+601) 2344 2368
+
+Fax: (+603) 9078 2032
+
+Email: enquiry@ucsicollege.edu.my
+</footer>
+<button onclick="topFunction()" id="topbutton" title="top">Back to Top</button>
+</body>
+</html>
