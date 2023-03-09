@@ -1,37 +1,17 @@
 <html>
 <head>
-    <title></title>
+    <title>UCSI College</title>
     <link rel="stylesheet" type="text/css"
           href="pro.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="ucsi.png" type="image/jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+let mybutton = document.getElementById("topbutton");
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+function topFunction() {
+  document.body.scrollTop = 0;
 }
 </script>
 </head>
@@ -45,6 +25,7 @@ function showSlides(n) {
             <td><a href="frame2.html">ABOUT US</a></td>
             <td><a href="frame3.html">STUDENT PORTAL</a></td>
             <td><a href="frame4.html">CONTACT US</a></td>
+<td> <input type="text" placeholder="Search" name="search"></td>
         </tr>
     </table>
 </form>
@@ -71,17 +52,21 @@ function showSlides(n) {
 </p>
 <footer>
 <img src="logo1.png">
-<p>UCSI College
+<h4>UCSI College</h4>
+<p>
+<br>
 Wisma UCSI, Lot 39890, Jalan Cerdas, Taman Connaught, 56000 Cheras, Wilayah Persekutuan Kuala Lumpur.
-
+<br>
 Course Enquiry: (+603) 9078 2033
-
+<br>
 Course Enquiry (WhatsApp)
+<br>
 Local Enrollment: (+6011) 3530 8837 | (+6011) 3512 7264
+<br>
 International Enrollment: (+601) 2344 2368
-
+<br>
 Fax: (+603) 9078 2032
-
+<br>
 Email: enquiry@ucsicollege.edu.my
 </footer>
 <button onclick="topFunction()" id="topbutton" title="top">Back to Top</button>

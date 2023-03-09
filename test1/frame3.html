@@ -1,9 +1,89 @@
 <html>
 <head>
-    <title>frame1</title>
+    <title>Student Portal</title>
+    <link rel="stylesheet" type="text/css"
+          href="pro.css">
+<link rel="icon" href="ucsi.png" type="image/jpg">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script>
+let mybutton = document.getElementById("topbutton");
+
+function topFunction() {
+  document.body.scrollTop = 0;
+}
+</script>
+
+<script>
+function validateForm()		{
+	let x = document.tjmform.text1.value;x = document.tjmform.text2.value;
+	if (x == "")	{
+		alert("Invalid Login Input.");
+		return false;
+	}
+}
+</script>
 </head>
 <body>
-    <h1>University</h1>
-    <a href="TAN JIA MING_DCS2209221.html" target"_blank">Home</a>
+<form>
+    <table>
+        <tr>
+            <td><img src="logo1.png"></td>
+            <td><a href="TAN JIA MING_DCS2209221.html">HOME</a></td>
+            <td><a href="frame1.html">PROGRAMMES</a></td>
+            <td><a href="frame2.html">ABOUT US</a></td>
+            <td><a href="frame3.html">STUDENT PORTAL</a></td>
+            <td><a href="frame4.html">CONTACT US</a></td>
+<td> <input type="text" placeholder="Search" name="search"></td>
+        </tr>
+    </table>
+</form>
+<hr>
+<br>
+
+<form name=tjmform onsubmit="return validateForm()">
+<table class=three>
+<tr>
+<td><p><u>STUDENT LOGIN</u></p></td><td></td>
+</tr>
+<tr>
+<td>Student ID :<input type=text name=text1></td>
+</tr>
+<tr>
+<td>Student Passsword:<input type=password name=text2></td>
+</tr>
+<tr><td>
+<input type=submit value=Login> <a href=frame4.html >Forgot Password?</a>
+</td>
+</tr>
+</table>
+</form>
+
+
+
+
+
+<footer>
+<img src="logo1.png">
+<h4>UCSI College</h4>
+<p>
+<br>
+Wisma UCSI, Lot 39890, Jalan Cerdas, Taman Connaught, 56000 Cheras, Wilayah Persekutuan Kuala Lumpur.
+<br>
+Course Enquiry: (+603) 9078 2033
+<br>
+Course Enquiry (WhatsApp)
+<br>
+Local Enrollment: (+6011) 3530 8837 | (+6011) 3512 7264
+<br>
+International Enrollment: (+601) 2344 2368
+<br>
+Fax: (+603) 9078 2032
+<br>
+Email: enquiry@ucsicollege.edu.my
+</footer>
+<button onclick="topFunction()" id="topbutton" title="top">Back to Top</button>
 </body>
 </html>

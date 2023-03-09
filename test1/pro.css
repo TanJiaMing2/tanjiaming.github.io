@@ -1,5 +1,5 @@
 body{
-width:fit-content:
+width:100%:
 }
 
 table {
@@ -10,11 +10,59 @@ table {
 text-align: center;
 color:grey;
 width:100%;
+    margin-top: 0;
+  border-collapse: collapse;
 
 }
-tr,td{
+
+table.one {
+    font-family: monospace;
+    font-size: 20pt;
+    border-radius: 1px;
+    border: 1px solid black;
 text-align: center;
+color:black;
+width:100%;
+
+}
+
+table.two {
+    font-family: monospace;
+    font-size: 20pt;
+    border-radius: 1px;
+    border: 1px solid black;
+text-align: center;
+color:black;
+width:60%;
+
+}
+
+table.three {
+    font-family: monospace;
+    font-size: 16pt;
+    border-radius: 1px;
+    border: 1px solid black;
+text-align: center;
+color:black;
+width:100%;
+height:50%;
+
+}
+
+tr,td{
 background-color:#DE7335;
+}
+
+tr.one{
+background-color:white;
+}
+
+td.one{
+background-color:white;
+}
+
+td.two{
+background-color:lightblue;
 }
 
 footer {
@@ -44,16 +92,47 @@ button {
   padding: 15px; 
   border-radius: 10px; 
   font-size: 18px; 
+  cursor: pointer;
 }
 
 p{
 text-align: center;
 }
-img.one{
-width:fit-content;
-}
+
 img.one{
 width:100%;
 }
 
+img.two{
+align:right;
+}
+p.one{
+text-align: left;
+margin-left:5%;
+}
+img.three{
+witdh:10%;height:10%;
+}
 
+h1{
+color:BLACK;
+text-align:center;
+}
+
+h2{
+color:white;
+text-align:center;
+}
+
+caption{
+font-family:Arial;
+color:black;
+}
+
+li{
+text-align:left;
+}
+
+a:hover {
+color: white;
+}
