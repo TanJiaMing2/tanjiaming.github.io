@@ -1,0 +1,58 @@
+push();
+rotateX(180); //
+rotateY(135); //
+translate(-50, -100, -50);
+beginShape();
+for (let i = 0; i < 3; i++) {
+  vertex(pyramidVertices[i][0], pyramidVertices[i][1], pyramidVertices[i][2]);
+}
+endShape(CLOSE);
+
+beginShape();
+for (let i = 3; i < 6; i++) {
+  vertex(pyramidVertices[i][0], pyramidVertices[i][1], pyramidVertices[i][2]);
+}
+endShape(CLOSE);
+
+beginShape();
+for (let i = 6; i < 9; i++) {
+  vertex(pyramidVertices[i][0], pyramidVertices[i][1], pyramidVertices[i][2]);
+}
+endShape(CLOSE);
+pop();
+
+// translate(-width / 3, -height / 3, 0);
+
+// if (vertex1 >= 150 || vertex1 <= -50) {
+//   direction *= -0.5; //
+// }
+// if (millis() - lastChangeTime > 2000) {
+//   // Check if 1 second has passed
+//   if (state === "increasing") {
+//     state = "pauseAfterIncrease";
+//   } else if (state === "pauseAfterIncrease") {
+//     state = "decreasing";
+//   } else if (state === "decreasing") {
+//     state = "pauseAfterDecrease";
+//   } else if (state === "pauseAfterDecrease") {
+//     state = "increasing";
+//   }
+//   lastChangeTime = millis(); // Reset the timer
+// }
+
+// // Update vertex1 based on the current state
+// if (state === "increasing") {
+//   vertex1 += direction;
+//   if (vertex1 >= 150) {
+//     direction = -0.5; // Reverse direction to decrease
+//     state = "pauseAfterIncrease"; // Transition to pause state
+//     lastChangeTime = millis(); // Reset the timer immediately after the change
+//   }
+// } else if (state === "decreasing") {
+//   vertex1 -= direction;
+//   if (vertex1 <= -50) {
+//     direction = 0.5; // Reverse direction to increase
+//     state = "pauseAfterDecrease"; // Transition to pause state
+//     lastChangeTime = millis(); // Reset the timer immediately after the change
+//   }
+// }
